@@ -1,0 +1,25 @@
+.catalog__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+}
+
+.catalog__item{
+    flex: 0 0 calc(25% - 20px);
+    width: calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.catalog--list .catalog__wrap{
+    display: block;
+    margin-left: 0;
+}
+
+.catalog--list .catalog__item{
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+}

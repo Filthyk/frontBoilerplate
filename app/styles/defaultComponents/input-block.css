@@ -1,0 +1,113 @@
+.input-block{
+  display: flex;
+  align-items: flex-start;
+}
+@media(max-width: 760px){
+  .input-block{
+    display: block;
+  }
+}
+.input-block__label{
+  flex: 0 0 240px;
+  padding-right: 15px;
+  max-width: 240px;
+  display: block;
+  padding-top: 12px;
+}
+@media(max-width: 760px){
+  .input-block__label{
+    max-width: 100%;
+    flex: 1 1 100%;
+    padding-right: 0;
+    margin-bottom: 7px;
+  }
+}
+.input-block__wrap{
+  flex: 1 1 auto;
+}
+.input-block__wrap--complex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.input-block__wrap--complex .input-block__input-wrap{
+  flex: 0 0 calc(50% - 15px);
+}
+.input-block__wrap--complex-3 .input-block__input-wrap{
+  flex: 0 0 calc(33.33% - 15px);
+}
+.input-block__input-inner{
+  position: relative;
+}
+.input-block__message{
+  margin-top: 5px;
+  flex: 1 1 100%;
+}
+.input-block__error-message{
+  margin-top: 5px;
+  flex: 1 1 100%;
+  color: red;
+}
+.input-block__require{
+  color: red;
+}
+.input-block__error-icon{
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+}
+.input-block__error-icon::before, .input-block__error-icon::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 2px;
+  height: 16px;
+  background-color: red;
+}
+.input-block__error-icon::before{
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.input-block__error-icon::after{
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.input-block__input-wrap.error{
+  color: red;
+}
+.input-block__input-wrap.error .input-block__input{
+  border-color: red;
+  padding-right: 40px;
+}
+.input-block__input-wrap.error .input-block__select{
+  border-color: red
+}
+.input-block__input-wrap.success{
+  color: green;
+}
+.input-block__input-wrap.success .input-block__input{
+  border-color: green;
+}
+.input-block__input-wrap.success .input-block__select{
+  border-color: green;
+}
+.input-block--block{
+  display: block;
+}
+.input-block--block .input-block__label{
+  display: block;
+  margin-bottom: 7px;
+  flex: 1 1 100%;
+  padding-right: 0;
+  max-width: 100%;
+  padding-top: 0;
+}
+.input-block--block .input-block__wrap{
+  flex: 1 1 100%;
+}

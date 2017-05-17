@@ -1,0 +1,89 @@
+.filter {
+    padding-bottom: 20px;
+    position: relative
+}
+
+.filter__item-head {
+    padding: 8px 0;
+    background-color: transparent;
+    width: 100%;
+    display: block;
+    padding-right: 15px;
+    position: relative;
+    text-align: left;
+}
+
+.filter__item-head[data-collapse-btn] {
+    cursor: pointer
+}
+
+.filter__item-head.active .filter__item-arrow {
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1)
+}
+
+.filter__item {
+    margin-bottom: 0;
+    padding-right: 14px
+}
+
+.filter__item--range {
+    padding-right: 0
+}
+
+.filter__item--range .filter__item-body {
+    padding-left: 0;
+    display: block
+}
+
+.filter__item-body {
+    margin-bottom: 35px;
+    display: none;
+    padding-left: 8px;
+    margin-top: 10px
+}
+
+.filter__checkbox,.filter__item-body.active {
+    display: block
+}
+
+.filter__checkbox:not(:last-of-type) {
+    margin-bottom: 8px
+}
+
+.filter__item-arrow {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 5px;
+    width: 10px;
+    margin: auto;
+    transition: transform .3s;
+}
+
+.filter__item-arrow:after,.filter__item-arrow:before {
+    content: "";
+    position: absolute;
+    right: 4px;
+    width: 1px;
+    height: 5px;
+    background-color: #5b5b5b;
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom
+}
+
+.filter__item-arrow:after {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.filter__item-arrow:before {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.filter__buttons {
+    margin-top: 35px
+}

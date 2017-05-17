@@ -1,0 +1,21 @@
+@import "./colors.css";
+
+.i-icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+
+    &--save{
+      fill: #fff;
+      stroke: var(--black);
+
+      &.saved{
+        fill: var(--yellow);
+        stroke: var(--yellow);
+      }
+    }
+}

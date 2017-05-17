@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'PNR';
+  src: url('../fonts/ProximaNovaRegular/ProximaNovaRegular.woff') format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'PNB';
+  src: url('../fonts/ProximaNovaBold/ProximaNovaBold.woff') format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'PNL';
+  src: url('../fonts/ProximaNovaLight/ProximaNovaLight.woff') format('woff');
+  font-weight: normal;
+}
