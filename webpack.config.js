@@ -65,7 +65,7 @@ module.exports = {
   // Output params
   output: {
     path: __dirname + '/build',
-    publicPath: '/kraft/build/', // необходимо поменять путь на build/
+    publicPath: '/build/',
     filename: '[name].js',
     library: 'App'
   },
