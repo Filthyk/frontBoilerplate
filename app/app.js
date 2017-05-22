@@ -1,18 +1,19 @@
 'use strict';
 
 // Load plugins
-import 'normalize.css';
+import 'jquery'
+import 'normalize.css'
 
-import svg4everybody from 'svg4everybody';
+import svg4everybody from 'svg4everybody'
 window.svg4everybody = svg4everybody;
 
-import objectFitImages from 'object-fit-images';
+import objectFitImages from 'object-fit-images'
 window.objectFitImages = objectFitImages;
 
 
 // Load styles
-import 'swiper/dist/css/swiper.css';
-import './styles/imports';
+import 'swiper/dist/css/swiper.css'
+import './styles/imports'
 
 // load modules
 import svgUse from'./js/svgUse';
