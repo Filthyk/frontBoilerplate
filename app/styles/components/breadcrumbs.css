@@ -1,68 +1,68 @@
 @import "../colors.css";
 @import "../media.css";
 
-.breadcrumbs{
-  margin: 24px 0;
+.breadcrumbs {
+    margin: 24px 0;
 
-  @media(--mobile){
-    margin: 9px 0;
-  }
-  &__item{
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    font-size: 13px;
-    font-family: 'PNL', sans-serif;
-
-    @media(--mobile){
-      font-size: 12px;
+    @media (--mobile) {
+        margin: 9px 0;
     }
+    &__item {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        font-size: 13px;
+        font-family: 'PNL', sans-serif;
 
-    &:not(:last-of-type){
-      margin-right: 4px;
-
-      @media(--mobile){
-        margin-right: 0px;
-      }
-
-      &::before{
-        content: '';
-        position: absolute;
-        width: 1px;
-        height: 12px;
-        background-color: var(--orange);
-        right: 0;
-        top: 0;
-        transition: width .3s;
-
-        @media(--mobile){
-          height: 8px;
-          top: 2px;
+        @media (--mobile) {
+            font-size: 12px;
         }
-      }
+
+        &:not(:last-of-type) {
+            margin-right: 4px;
+
+            @media (--mobile) {
+                margin-right: 0px;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 12px;
+                background-color: var(--orange);
+                right: 0;
+                top: 0;
+                transition: width .3s;
+
+                @media (--mobile) {
+                    height: 8px;
+                    top: 2px;
+                }
+            }
+        }
+
+        &:hover {
+            .breadcrumbs__link {
+                color: #ffffff;
+            }
+
+            &::before {
+                width: 100%;
+            }
+        }
     }
 
-    &:hover{
-      .breadcrumbs__link{
-        color: #ffffff;
-      }
+    &__link {
+        position: relative;
+        display: inline-block;
+        padding-right: 9px;
+        padding-left: 2px;
+        transition: color .3s;
 
-      &::before{
-        width: 100%;
-      }
+        @media (--mobile) {
+            padding-right: 3px;
+            padding-left: 0;
+        }
     }
-  }
-
-  &__link{
-    position: relative;
-    display: inline-block;
-    padding-right: 9px;
-    padding-left: 2px;
-    transition: color .3s;
-
-    @media(--mobile){
-      padding-right: 3px;
-      padding-left: 0;
-    }
-  }
 }
